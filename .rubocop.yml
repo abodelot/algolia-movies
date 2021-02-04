@@ -1,0 +1,67 @@
+AllCops:
+  NewCops: enable
+  SuggestExtensions: false
+  Exclude:
+    - Gemfile
+    - bin/**/*
+    - db/schema.rb
+    - config/application.rb
+    - node_modules/**/*
+
+Layout/LineLength:
+  Max: 100
+
+Layout/MultilineMethodCallIndentation:
+  EnforcedStyle: indented
+
+Layout/SpaceInLambdaLiteral:
+  EnforcedStyle: require_space
+
+Metrics/AbcSize:
+  Max: 32
+
+Metrics/BlockLength:
+  Max: 32
+
+Metrics/ClassLength:
+  Max: 100
+
+Metrics/CyclomaticComplexity:
+  Max: 12
+
+Metrics/MethodLength:
+  Max: 32
+
+Metrics/PerceivedComplexity:
+  Max: 12
+
+Naming/VariableNumber:
+  EnforcedStyle: snake_case
+
+Style/ClassAndModuleChildren:
+  EnforcedStyle: compact
+
+Style/BlockComments:
+  Enabled: false
+
+Style/Documentation:
+  Enabled: false
+
+Style/FrozenStringLiteralComment:
+  EnforcedStyle: never
+
+Style/GuardClause:
+  MinBodyLength: 10
+
+Style/Lambda:
+  EnforcedStyle: literal
+
+Style/TrailingCommaInArrayLiteral:
+  EnforcedStyleForMultiline: comma
+
+Style/TrailingCommaInArguments:
+  EnforcedStyleForMultiline: comma
+
+Style/TrailingCommaInHashLiteral:
+  EnforcedStyleForMultiline: comma
+
