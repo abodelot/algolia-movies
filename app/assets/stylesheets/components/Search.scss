@@ -1,0 +1,194 @@
+// ais SearchBox
+//------------------------------------------------------------------------------
+
+div.search-wrapper {
+  background: $grey2;
+  box-shadow: 0 0 5px black;
+  text-align: center;
+  padding: 30px;
+
+  h2.subtitle {
+    padding-top: 0.5em;
+    font-size: 1rem;
+  }
+}
+
+div.ais-SearchBox {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+form.ais-SearchBox-form {
+  display: flex;
+  width: 600px;
+
+  input.ais-SearchBox-input {
+    background: $bg-input;
+    flex: 1;
+    font-size: 24px;
+    color: white;
+    border: none;
+    border-radius: 0.5em 0 0 0.5em;
+    padding: 10px 15px;
+
+    &:focus {
+      background: $bg-input-focus;
+    }
+  }
+
+  button.ais-SearchBox-submit {
+    width: 100px;
+    color: white;
+    background: $green1;
+    border-radius: 0 0.5em 0.5em 0;
+    border: none;
+    padding: 10px 15px;
+  }
+
+  .ais-SearchBox-reset {
+    display: none;
+  }
+}
+
+// Stats
+//------------------------------------------------------------------------------
+
+.search-stats {
+  padding-top: 10px;
+  color: #aaa;
+  text-align: center;
+  font-size: 14px;
+}
+
+// Grid
+//------------------------------------------------------------------------------
+
+ul.ais-Hits-list {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+// Mobile
+@media screen and (min-width: 480px) {
+  li.ais-Hits-item {
+    width: 100%; // 1-column
+  }
+}
+
+// Tablet
+@media screen and (min-width: 768px) {
+  li.ais-Hits-item {
+    width: 50%; // 2-columns
+    padding: 10px;
+  }
+}
+
+// Desktop
+@media screen and (min-width: 992px) {
+  li.ais-Hits-item {
+    width: 33%; // 3-columns
+    padding: 15px;
+  }
+}
+
+// HD Desktop
+@media screen and (min-width: 1440px) {
+  li.ais-Hits-item {
+    width: 25%; // 4-columns
+    padding: 20px;
+  }
+}
+
+// Card
+//------------------------------------------------------------------------------
+
+.card {
+  background-color: $grey2;
+  display: flex;
+  border-radius: 3px;
+  padding: 15px;
+  box-shadow: 0 3px 5px -2px black;
+
+  .ais-Highlight-highlighted {
+    color: #ff0;
+  }
+}
+
+.card-image {
+  // Avoid breaking layout if image is missing
+  width: 154px;
+  height: 231px;
+}
+
+.card-content {
+  margin-left: 20px;
+  line-height: 1.7rem;
+  flex: 1;
+
+  .card-title {
+    font-size: 1.3rem;
+    margin-bottom: 0.5em;
+    font-family: 'Poppins', sans-serif;
+    display: block;
+  }
+
+  .card-genres {
+    margin-bottom: 0.5em;
+
+    span {
+      font-size: 12px;
+      background: $grey3;
+      box-shadow: 0 2px 2px rgba(255, 255, 255, 0.1) inset;
+      display: inline-block;
+      padding: 2px 6px;
+      line-height: 1rem;
+      border-radius: 3px;
+      margin-right: 4px;
+    }
+  }
+
+  .card-label {
+    color: #aaa;
+  }
+}
+
+// ais Pagination
+//------------------------------------------------------------------------------
+
+div.ais-Pagination {
+  background: $grey2;
+  box-shadow: 0 0 5px black;
+}
+
+ul.ais-Pagination-list {
+  padding: 1em 0;
+  display: flex;
+  justify-content: center;
+}
+
+li.ais-Pagination-item {
+  margin: 5px;
+  padding: 5px;
+  border-radius: 2px;
+
+  &.ais-Pagination-item--selected {
+    background: $green1;
+    color: white;
+  }
+}
+
+@media screen and (max-width: 731px) {
+  input {
+    min-width: 250px;
+    border: none;
+    border-radius: 0.5em;
+    padding: 15px;
+  }
+
+  ul.ais-Pagination-list {
+    flex-wrap: wrap;
+  }
+}

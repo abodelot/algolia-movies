@@ -1,0 +1,28 @@
+form.movie-form {
+  div.row {
+    padding: 1em 0;
+    display: flex;
+    line-height: 30px;
+  }
+
+  input[type=text],
+  input[type=number] {
+    display: inline-block;
+    background: $bg-input;
+    border: none;
+    border-radius: 2px;
+    color: #ccc;
+    padding: 4px 8px;
+    font-size: 16px;
+    min-width: 100px;
+
+    &:focus {
+      background: $bg-input-focus;
+    }
+  }
+
+  label {
+    display: inline-block;
+    width: 180px;
+  }
+}

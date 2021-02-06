@@ -1,24 +1,43 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Setup
 
-Things you may want to cover:
+Ruby dependencies:
 
-* Ruby version
+    bundle install
 
-* System dependencies
+Javascript dependencies:
 
-* Configuration
+    yarn install
 
-* Database creation
+## Launch application
 
-* Database initialization
+Back-end:
 
-* How to run the test suite
+    rails s
 
-* Services (job queues, cache servers, search engines, etc.)
+Front-end:
 
-* Deployment instructions
+    ./bin/webpack-dev-server
 
-* ...
+## Importing data
+
+    rake data:import
+
+## Linters and tests:
+
+Rubocop
+
+    bundle exec rubocop
+
+Eslint
+
+    yarn run eslint
+
+Stylelint
+
+    yarn run stylelint
+
+Unit tests
+
+    rspec

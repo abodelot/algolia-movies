@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Poppins&display=swap');
+@import 'variables.scss';
+@import 'components/App.scss';
+@import 'components/Search.scss';
+@import 'components/MovieForm.scss';
+@import 'components/ListEdit.scss';
+
+body {
+  font-family: 'Roboto', sans-serif;
+  padding: 0;
+  margin: 0;
+  color: #e0e0e0;
+  font-size: 16px;
+  background: $grey1;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+li {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+*:focus {
+  outline: none;
+}
+
+.inner {
+  padding: 2em;
+}

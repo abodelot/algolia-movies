@@ -1,19 +1,35 @@
 {
   "name": "algolia-movies",
   "private": true,
+  "scripts": {
+    "eslint": "eslint app/javascript/packs/**/*.jsx",
+    "stylelint": "stylelint app/assets/stylesheets/**/*.scss"
+  },
   "dependencies": {
     "@babel/preset-react": "^7.12.13",
     "@rails/activestorage": "^6.0.0",
     "@rails/ujs": "^6.0.0",
     "@rails/webpacker": "5.2.1",
+    "algoliasearch": "^4.8.4",
+    "axios": "^0.21.1",
     "babel-plugin-transform-react-remove-prop-types": "^0.4.24",
     "prop-types": "^15.7.2",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
-    "turbolinks": "^5.2.0"
+    "react-instantsearch-dom": "^6.9.0",
+    "react-router-dom": "^5.2.0"
   },
   "version": "0.1.0",
   "devDependencies": {
+    "eslint": "^7.19.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-react": "^7.22.0",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "stylelint": "^13.9.0",
+    "stylelint-config-standard": "^20.0.0",
     "webpack-dev-server": "^3.11.2"
   }
 }
