@@ -1,0 +1,32 @@
+span.stars {
+  margin-left: 4px;
+  display: inline-block;
+  color: #c5c5c5;
+  font-size: 20px;
+  height: 20px;
+  position: relative;
+  text-shadow: 0 1px 0 #a2a2a2;
+
+  &[title="1"]::after { width: 20px; }
+  &[title="2"]::after { width: 40px; }
+  &[title="3"]::after { width: 60px; }
+  &[title="4"]::after { width: 80px; }
+  &[title="5"]::after { width: 100px; }
+
+  &::before {
+    content: '★★★★★';
+    opacity: 0.3;
+  }
+
+  &::after {
+    color: #c3ae3b;
+    content: '★★★★★';
+    text-shadow: 0 1px 0 #ab5414;
+    position: absolute;
+    z-index: 1;
+    display: block;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+  }
+}

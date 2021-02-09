@@ -5,6 +5,8 @@ import {
 import { Link } from 'react-router-dom';
 import algoliasearch from 'algoliasearch/lite';
 
+import StarRating from './StarRating';
+
 const searchClient = algoliasearch('DJ6C01D4GV', 'f6c0c54fd3ecefe451dc186c18710680');
 
 const Card = ({ hit }) => (
@@ -19,7 +21,8 @@ const Card = ({ hit }) => (
       </div>
       <Highlight attribute="year" hit={hit} className="card-year" />
       <div className="card-rating">
-        <span className="card-label">Rating:</span> {hit.rating}/5
+        <span className="card-label">Rating:</span>
+        <StarRating rating={hit.rating} />
       </div>
       <div className="card-score">
         <span className="card-label">Audience score:</span> {hit.score.toFixed(2)}/10

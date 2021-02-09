@@ -1,7 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Poppins&display=swap');
 @import 'variables.scss';
+/*
+ *= require_self
+ *= require_tree .
+ */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Poppins&display=swap');
 @import 'components/App.scss';
 @import 'components/Search.scss';
+@import 'components/StarRating.scss';
 @import 'components/MovieForm.scss';
 @import 'components/ListEdit.scss';
 
